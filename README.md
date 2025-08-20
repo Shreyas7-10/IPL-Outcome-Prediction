@@ -60,7 +60,7 @@ Python 3.12.4 with the following core libraries:
 ---
 
 ## Running the Notebook
-1. Clone or download the project folder.  
+1. Clone or download this repository.
 2. Download the raw CSV files from Kaggle and place them alongside this README and `IPL.ipynb`.  
 3. Open `IPL.ipynb` in Jupyter Lab or Jupyter Notebook.  
 4. Run all cells sequentially to:  
