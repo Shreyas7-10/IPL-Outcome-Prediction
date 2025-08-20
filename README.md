@@ -1,4 +1,4 @@
-# IPL Match Outcome Prediction and Player Role Segmentation
+# Pre-toss IPL Match Outcome Prediction and Player Role Segmentation
 
 ## Overview
 This project forms part of my MSc Data Science dissertation at the University of Sheffield. 
@@ -12,13 +12,13 @@ The study uses ball-by-ball data from multiple IPL seasons (sourced from public 
 ---
 
 ## Research Questions (RQs)
-RQ1: Can unsupervised learning techniques be used to define interpretable, role-based player clusters (e.g., top-order anchors, finishers, strike bowlers) using rolling and phase-specific performance data?
+- RQ1: Can unsupervised learning techniques be used to define interpretable, role-based player clusters (e.g., top-order anchors, finishers, strike bowlers) using rolling and phase-specific performance data?
 
-RQ2: To what extent can IPL match outcomes be predicted using pre-match contextual features, such as venue effects, team composition, player form, momentum, and head-to-head strength indicators?
+- RQ2: To what extent can IPL match outcomes be predicted using pre-match contextual features, such as venue effects, team composition, player form, momentum, and head-to-head strength indicators?
 
-RQ3: To what extent does momentum (measured via recent win rate differentials) matter in IPL, and do teams with higher recent win rates tend to win more matches?
+- RQ3: To what extent does momentum (measured via recent win rate differentials) matter in IPL, and do teams with higher recent win rates tend to win more matches?
 
-RQ4: How do aggregated team-level metrics constructed from clustered player roles and recent form influence match outcomes, based on statistical testing?
+- RQ4: How do aggregated team-level metrics constructed from clustered player roles and recent form influence match outcomes, based on statistical testing?
 
 ## Repository Contents
 - **IPL.ipynb**  
@@ -72,4 +72,13 @@ Python 3.12.4 with the following core libraries:
 ---
 
 ## Notes
-- Reproducibility: A fixed random seed is used in modelling steps for consistency.  
+- Reproducibility: A fixed random seed is used in modelling steps for consistency.
+
+## Key Insights
+- Clustering: Identified clear player role archetypes (e.g., top-order anchors, finishers, strike bowlers), with overlaps reflecting tactical flexibility in T20 cricket.
+
+- Prediction: CatBoost was the best-performing model with ~62% accuracy using only pre-toss contextual features.
+
+- Important factors: Bowling-related metrics (rolling economy, wicket-taking ability) were stronger predictors than most batting features.
+
+- Momentum: Recent win-rate differences did not strongly predict match outcomes, suggesting form is less decisive than contextual strengths.
